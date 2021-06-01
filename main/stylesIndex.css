@@ -259,12 +259,12 @@ main {
 }
 
 .about-box h1 {
-  z-index: 5;
+  position: relative;
   font-size: 1.7rem;
 }
 
 .about-box h2 {
-  z-index: 5;
+  position: relative;
   font-size: 1.4rem;
 }
 
