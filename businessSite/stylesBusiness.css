@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@700&family=Lustria&family=Open+Sans:wght@600&display=swap');
+
+/*
+  font-family: 'Cambay', sans-serif;
+  font-family: 'Lustria', serif;
+  font-family: 'Open Sans', sans-serif;
+*/
+
+/* GLOBALS */
+:root {
+    /* CSS HEX */
+  --champagne-pink: #ebdddaff;
+  --camel: #c79e74ff;
+  --forest-green-crayola: #74a570ff;
+  --middle-purple: #d18cbaff;
+  --electric-purple: #b03cf2ff;
+  --green-blue-crayola: #2c88c3ff;
+  --electric-purple-2: #a43cffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--champagne-pink);
+  color: var(--electric-purple);
+}
+
+main,
+header,
+footer {
+  text-align: center;
+}
+
+main h1, main h2 {
+  color: var(--green-blue-crayola)
+}
+
+/* FOR THE TITLE */
+.title {
+  width: 100%;
+  height: 120px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--middle-purple);
+  color: var(--champagne-pink);
+}
+
+.title h1 {
+  text-transform: capitalize;
+}
+
+.title img {
+  width: auto;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 850px) {
+  .title h1 {
+    text-align: center;
+  }
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  width: 100%;
+  margin: auto;
+}
+
+.nav-links ul {
+  width: 85%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.nav-links ul li {
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: var(--champagne-pink);
+  background-color: var(--electric-purple);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-links ul li a {
+    font-size: 1rem;
+  }
+}
+
+/* VISION */
+.vision {
+  /*
+    Photo by <a href="https://unsplash.com/@trine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Katrin Hauf</a> on <a href="https://unsplash.com/s/photos/ink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+  /* 
+  Photo by <a href="https://unsplash.com/@gradienta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gradienta</a> on <a href="https://unsplash.com/s/photos/ink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
+  */
+  
+  background-image: url("https://github.com/Palatio93/websiteAssets/blob/main/businessSite/vision_background_2.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vision h2,
+#contact h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+/* GLOBALS PRODUCTS, TEAM, CONTACT */
+.box {
+  margin: 1.25rem auto;
+}
+
+.imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 1rem;
+  width: 25rem;
+  height: auto;
+}
+
+.img-container img {
+  width: 80%;
+  height: auto;
+}
+
+.img-container h3 {
+  width: 20%;
+}
+
+/* PRODUCTS */
+.info {
+  margin: 1rem auto;
+}
+
+.info h2 {
+  text-transform: capitalize;
+}
+
+#products img {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+  .info h3 {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* TEAM */
+#team .imgs-container {
+  background: rgb(44,136,195);
+  background: linear-gradient(90deg, rgba(44,136,195,1) 0%, rgba(9,120,121,0) 50%, rgba(44,136,195,1) 100%);
+  width: 100%;
+  /* height: 20rem; */
+}
+
+#team .img-container {
+  flex-direction: column;
+}
+
+/* CONTACT */
+#contact {
+  background-color: var(--green-blue-crayola);
+  color: var(--champagne-pink);
+  width: 30%;
+  border-radius: 10px;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 10px;
+}
+
+#contact h2 {
+  color: var(--champagne-pink);
+  margin-bottom: 10px;
+}
+
+#special {
+  margin-bottom: 10px;
+}
+
+#contact .info {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  #contact {
+    width: 60%;
+  }
+}
+
+/* FOOTER */
+footer {
+  color: var(--camel);
+  margin: 25px;
+}
+
+@media only screen and (max-width: 850px) {
+  footer {
+    font-size: 0.9rem;
+  }
+}

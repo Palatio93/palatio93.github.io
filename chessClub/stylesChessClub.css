@@ -1,0 +1,228 @@
+
+/*
+    font-family: 'Prata', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    /* CSS HEX */
+    --alabaster: #efefe9ff;
+    --khaki-web: #b2a78fff;
+    --straw: #cdcf7aff;
+    --yellow-green-color-wheel: #13b82cff;
+    --slimy-green: #21a108ff;
+    --brown-sugar: #b96d40ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  GLOBALS */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--alabaster);
+    color: var(--brown-sugar);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Prata', serif;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    position: relative;
+    top: 64px;
+}
+
+/*  HEADER */
+header {
+    background-color: var(--brown-sugar);
+    color: var(--alabaster);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-links ul {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px solid var(--straw);
+    border-radius: 8px;
+    padding: 0.4rem;
+}
+
+/*  ABOUT */
+.about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+}
+
+.about::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url("https://github.com/Palatio93/websiteAssets/blob/main/chessClub/background1.jpg?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*  BACKGROUND 1
+    Photo by <a href="https://unsplash.com/@jeshoots?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">JESHOOTS.COM</a> on <a href="https://unsplash.com/s/photos/chess?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    */
+}
+
+.info {
+    position: relative;
+}
+
+.info h1 {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+/*  COMMENT */
+.comment {
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.comment h2 {
+    color: var(--slimy-green);
+    margin-bottom: 0.8rem;
+}
+
+.comment span {
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 550px){
+    .comment {
+        margin-bottom: 2rem;
+    }
+    
+}
+
+/*  IMAGES */
+.imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.img-container {
+    min-width: 16rem;
+    max-width: 22rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/*  TESTIMONIAL */
+.testimonial {
+    background-color: var(--yellow-green-color-wheel);
+    color: var(--alabaster);
+    margin: 0 auto 1rem;
+    width: 75%;
+    padding: 0.8rem;
+    font-size: 2rem;
+    border-radius: 0.625rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .testimonial {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .testimonial {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .testimonial {
+        width: 80%;
+        margin: 0 auto 1rem;
+        font-size: 1rem;
+    }
+}
+
+/*  CONTACT */
+.contact {
+    width: 100%;
+    background-color: var(--khaki-web);
+    color: var(--alabaster);
+    padding: 0.625rem;
+}
+
+.contact .img-container {
+    margin: 0.625rem auto;
+    width: 16rem;
+    max-width: 32rem;
+}
+
+@media only screen and (min-width: 990px){
+    .contact .img-container {
+        width: 26rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .contact .img-container {
+        width: 32rem;
+    }
+}
+
+/*  FOOTER */
+footer {
+    position: relative;
+    top: 64px;
+    padding: 1rem;
+    color: var(--yellow-green-color-wheel);
+}

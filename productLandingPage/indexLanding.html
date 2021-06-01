@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Landing Page">
+    <meta name="description" content="Landing page as practice project">
+    <meta name="author" content="Humberto Hernández">
+
+    <link rel="stylesheet" href="./stylesLanding.css">
+
+    <script src="https://kit.fontawesome.com/eebe13f46c.js" crossorigin="anonymous"></script>
+
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header" class="nav-bar">
+        <!-- <img src="./logo_legend_zelda.jpg" alt="logo company" id="header-img"> -->
+        <img src="https://github.com/Palatio93/websiteAssets/blob/main/productLandingPage/logo_legend_zelda.jpg?raw=true" alt="logo company" id="header-img">
+        <nav id="nav-bar">
+            <div class="nav-links" id="nav-links">
+                <i class="far fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#main" class="nav-link">Home</a></li>
+                    <li><a href="#main" class="nav-link">Info</a></li>
+                    <li><a href="#superVideo" class="nav-link">Graphic video</a></li>
+                    <li><a href="#superVideo" class="nav-link">Newsletter</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <h1>PC parts for your personalized Master Race</h1>
+        <div class="info-products">
+            <h2> <i class="fas fa-desktop"></i>Great monitors of all sizes</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis nihil veritatis omnis molestiae quae, blanditiis aperiam ipsa commodi, delectus maxime ut fuga fugit laboriosam.
+            </p>
+            <h2><i class="fas fa-keyboard"></i>Best mechanical keyboards for gaming</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptas possimus magni delectus architecto, consequatur officiis repellat fugit nisi esse iure exercitationem et dolor nobis!
+            </p>
+            <h2><i class="fas fa-headphones"></i>Headsets to communicate with your teammates</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti beatae perspiciatis neque inventore commodi voluptate voluptas incidunt nostrum quod labore exercitationem a, iste quaerat cum.
+            </p>
+        </div>
+
+        <figure class="fig-box" id="superVideo">
+            <!-- <video src="https://www.youtube.com/watch?v=mNopFOrHhXI" controls></video> -->
+            <div class="video-container">
+                <iframe width="720" height="405" src="https://www.youtube.com/embed/mNopFOrHhXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+            </div>
+            <figcaption>Video property of <a href="https://www.youtube.com/watch?v=mNopFOrHhXI" target="_blank" rel="noreferrer">TechSource</a> &copy;</figcaption>
+        </figure>
+
+        <form action="https://www.freecodecamp.org/email-submit" class="formy" id="form">
+            <div class="form-group">
+                <label for="email">Subscribe to receive the latest trends in the market.</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email here">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Subscribe" id="submit">
+            </div>
+        </form>
+
+        <footer class="footer">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Conditions</a></li>
+            </ul>
+            <small>Copyright 2021, Best PC Parts &copy;</small>
+        </footer>
+    </main>
+    <script>
+        var navLinks = document.getElementById("nav-links");
+    
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+        navLinks.style.right = "-700px";
+    }
+    </script>
+</body>
+
+</html>

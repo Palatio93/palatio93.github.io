@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Ubuntu:wght@300&display=swap');
+
+/* 
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif; 
+*/
+
+:root {
+    --charcoal: #2f4858ff;
+    --queen-blue: #33658aff;
+    --dark-sky-blue: #86bbd8ff;
+    --honey-yellow: #f6ae2dff;
+    --safety-orange-blaze-orange: #f26419ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    color: var(--honey-yellow);
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: hsla(203, 30%, 26%, 1);
+    background: linear-gradient(180deg, hsla(203, 30%, 26%, 0.9) 0%, hsla(201, 51%, 69%, 1) 89%);
+}
+
+main {
+    width: 75%;
+    margin: 0 auto 25px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    /* border: 1px solid var(--safety-orange-blaze-orange); */
+    background-color: var(--charcoal);
+}
+
+header {
+    margin: 0 auto;
+    padding: 25px;
+    width: 75%;
+    border-radius: 20px;
+    background: hsla(206, 46%, 37%, 1);
+    background: linear-gradient(180deg, hsla(206, 46%, 37%, 1) 50%, hsla(201, 51%, 69%, 1) 100%);
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+#title {
+    margin-bottom: 15px;
+}
+
+#description {
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.group-form {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.instructions-label {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-form {
+    border: none;
+    background-color: var(--dark-sky-blue);
+    color: var(--charcoal);
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    height: 28px;
+}
+
+.droppy {
+    color: var(--charcoal);
+    background-color: var(--dark-sky-blue);
+}
+
+.multiple-menu {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    border-radius: 10px;
+    background-color: var(--dark-sky-blue);
+    padding: 5px;
+}
+
+.multiple-menu label {
+    text-align: left;
+    padding-left: 38px;
+    margin-bottom: 4px;
+    color: var(--charcoal);
+    font-weight: bold;
+}
+
+.multiple-menu input {
+    margin-right: 10px;
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc; 
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: var(--safety-orange-blaze-orange);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Create a custom radio button */
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark-radio {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark-radio {
+    background-color: var(--safety-orange-blaze-orange);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark-radio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark-radio:after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.my-text-area {
+    height: 120px;
+    border-radius: 10px;
+    resize: none;
+    padding-top: 10px;
+    padding-left: 14px;
+}
+
+.btn-sub {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--queen-blue);
+    color: var(--honey-yellow);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.btn-sub:hover {
+    background-color: var(--safety-orange-blaze-orange);
+    color: var(--charcoal);
+}
+
+@media (min-width:1000px) {
+    body {
+        width: 75%;
+        margin: auto;
+    }
+}

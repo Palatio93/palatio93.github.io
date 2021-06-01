@@ -1,0 +1,175 @@
+:root {
+    --firstColor: #03045E;
+    --secondColor: #023E8A;
+    --thirdColor: #0077B6;
+    --fourthColor: #0096C7;
+    --fifthColor: #00B4D8;
+    --sixthColor: #48CAE4;
+    --seventhColor: #90E0EF;
+    --eigthColor: #ADE8F4;
+    --ninthColor: #CAF0F8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Metamorphous', cursive;
+    font-family: 'Lora', serif;
+*/
+
+body {
+    background-color: var(--secondColor);
+    /* color: var(--firstColor); */
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Metamorphous', cursive;
+    text-align: center;
+}
+
+#main {
+    background-color: var(--thirdColor);
+    margin: 25px;
+    border-radius: 15px;
+}
+
+#title {
+    padding: 15px;
+}
+
+h1 {
+    color: var(--ninthColor);
+    margin-top: 15px;
+    font-size: 36px;
+}
+
+#title p {
+    color: var(--seventhColor);
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+figure {
+    /* border: 1px solid var(--eigthColor); */
+    border-radius: 20px;
+    background-color: var(--eigthColor);
+    padding: 15px;
+    margin: 0 15px;
+    margin-bottom: 15px;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 15px;
+}
+
+#img-caption {
+    font-weight: 600;
+    color: var(--firstColor);
+}
+
+#tribute-info {
+    color: var(--seventhColor);
+    width: 80%;
+    text-align: justify;
+    margin: 10px auto;
+    padding: 25px;
+    font-size: 18px;
+}
+
+ul li {
+    padding: 15px;
+}
+
+ul li:nth-child(2n) {
+    color: var(--eigthColor);
+}
+
+ul li:nth-child(2n + 1) {
+    color: var(--ninthColor);
+}
+
+#arthas {
+    text-decoration: underline;
+    display: inline-block;
+}
+
+#arthas::first-letter {
+    font-weight: bolder;
+    font-size: 110%;;
+}
+
+#lastQuote {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 2s;
+}
+
+#lastQuote:hover {
+    letter-spacing: 6px;
+}
+
+h2 {
+    margin: 15px;
+    font-size: 24px;
+}
+
+#death {
+    color: #000;
+    text-shadow: 0px 0px 10px #41FA57,
+                 0px 0px 20px #41FA57,
+                 0px 0px 30px #41FA57,
+                 0px 0px 40px #41FA57,
+                 0px 0px 50px #41FA57,
+                 0px 0px 60px #41FA57,
+                 0px 0px 70px #41FA57;
+}
+
+
+
+blockquote {
+    width: 75%;
+    margin: 15px auto 25px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--firstColor);
+}
+
+a:visited {
+    color: var(--firstColor);
+}
+
+a:hover {
+    /* color: var(--eigthColor); */
+    text-shadow: 0px 0px 10px var(--eigthColor),
+                 0px 0px 20px var(--eigthColor),
+                 0px 0px 30px var(--eigthColor),
+                 0px 0px 40px var(--eigthColor),
+                 0px 0px 50px var(--eigthColor),
+                 0px 0px 60px var(--eigthColor),
+                 0px 0px 70px var(--eigthColor);
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+blockquote cite {
+    position: relative;
+    left: 30px;
+}

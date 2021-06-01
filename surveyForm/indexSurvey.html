@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Arthas, WOW, Tribute page">
+    <meta name="description" content="Survey form as practice project">
+    <meta name="author" content="Humberto Hernández">
+
+    <link rel="stylesheet" href="./stylesSurvey.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Survey Form for freeCodeCamp Projects</h1>
+        <p id="description">This survey is meant with the purpose of practice HTML and CSS. <br>Thanks for passing by.</p>
+    </header>
+    <main class="main">
+        <form action="" id="survey-form">
+            <!-- NAME -->
+            <div class="group-form">
+                <label for="name" id="name-label" class="instructions-label">Enter your name: </label>
+                <input type="text" name="name" id="name" placeholder="John Doe" required class="input-form">
+            </div>
+
+            <!-- EMAIL -->
+            <div class="group-form">
+                <label for="email" id="email-label" class="instructions-label">Enter your email: </label>
+                <input type="email" name="email" id="email" placeholder="name@email.com" required class="input-form">
+            </div>
+
+            <!-- NUMBER -->
+            <div class="group-form">
+                <label for="winters" id="number-label" class="instructions-label">Enter how many winters you have seen: <span>(optional)</span></label>
+                <input type="number" name="winters" id="number" min="0" max="150" placeholder="Winters seen" class="input-form">
+            </div>
+
+            <!-- SEASON OF THE YEAR -->
+            <div class="group-form">
+                <p class="instructions-label">What is your favorite season of the year?</p>
+                <select name="role" id="dropdown" class="input-form droppy" required>
+                    <option disabled selected value>Choose your favorite season</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                </select>
+            </div>
+
+            <!-- RADIO BUTTONS -->
+            <div class="group-form">
+                <p class="instructions-label">Will you recommend Windows 10 to your friends?</p>
+                <div class="multiple-menu">
+                    <label class="container">
+                        <input type="radio" value="sure" name="recommend" id="sure" checked>
+                        Sure
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" value="nah" name="recommend" id="nah">
+                        Nah
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" value="what" name="recommend" id="doubt">
+                        I don't speak with my friends about operating systems
+                        <span class="checkmark-radio"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- CHECKBOXES -->
+            <div class="group-form">
+                <p class="instructions-label">What do you tipically watch in Youtube?</p>
+                <div class="multiple-menu">
+                    <label class="container">
+                        Coding videos
+                        <input type="checkbox" name="coding" id="coding" value="coding">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        Gaming videos
+                        <input type="checkbox" name="gaming" id="gaming" value="gaming">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        Cooking tutorials
+                        <input type="checkbox" name="cooking" id="cooking" value="cooking">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        IRL videos
+                        <input type="checkbox" name="irl" id="irl" value="irl">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        Music videos
+                        <input type="checkbox" name="music" id="music" value="music">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        News videos
+                        <input type="checkbox" name="news" id="news" value="news">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- TEXT AREA -->
+            <div class="group-form">
+                <p class="instructions-label">Leave us a comment or suggestion</p>
+                <textarea name="comments" id="comments" rows="8" placeholder="Enter your comment here" class="input-form my-text-area"></textarea>
+            </div>
+
+            <!-- SUBMIT -->
+            <button type="submit" id="submit" class="btn-sub">Submit</button>
+        </form>
+    </main>    
+</body>
+</html>

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+        CSS HEX
+    --charcoal: #2a3d45ff;
+    --snow: #fbf5f3ff;
+    --dark-sky-blue: #87c4deff;
+    --teal-blue: #598091ff;
+    --red-pigment: #ed1c24ff;
+    --fire-opal: #ee6352ff;
+
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --charcoal: #2a3d45ff;
+    --snow: #fbf5f3ff;
+    --dark-sky-blue: rgba(135, 196, 222, 0.7);
+    --teal-blue: #598091ff;
+    --red-pigment: #ed1c24ff;
+    --fire-opal: rgba(238, 99, 82, 1);
+}
+
+body {
+    background-color: var(--snow);
+    color: var(--charcoal);
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+#navbar {
+    /* margin-top: 20px; */
+    margin-left: 10px;
+    /* overflow: hidden; */
+    position: fixed;
+    /* top: 0; */
+    width: 250px;
+    height: 100vh;
+    padding-top: 20px;
+    border-right: 5px solid var(--red-pigment);
+}
+
+nav {
+    display: block;
+    padding-left: 10px;
+}
+  
+nav ul li {
+    list-style: none;
+    /* display: inline-block; */
+    padding: 8px 12px;
+    position: relative;
+    border-top: 2px solid var(--red-pigment);
+    cursor: pointer;
+    width: 100%;
+}
+
+.nav-links h1 {
+    margin-bottom: 10px;
+}
+
+.nav-links li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--fire-opal);
+    width: 100%;
+}
+
+.nav-links li:hover {
+    background-color: var(--red-pigment);
+}
+
+.nav-links li a:hover {
+    color: var(--snow);
+}
+
+nav .fas,
+nav .far {
+  display: none;
+}
+
+@media (max-width: 700px) {
+    /* nav ul li {
+        display: inline-block;
+    } */
+
+    #navbar {
+        border-right: none;
+        z-index: 1000;
+    }
+
+    .nav-links {
+        position: fixed;
+        background-color: var(--charcoal);
+        color: var(--snow);
+        height: 100vh;
+        width: 50vw;
+        top: 0;
+        right: -700px;
+        text-align: center;
+        z-index: 1000;
+        transition: 1.5s;
+    }
+
+    .nav-links li a {
+        color: var(--snow);
+    }
+
+    nav .fas,
+    nav .far {
+        display: block;
+        color: var(--charcoal);
+        margin: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav .fas {
+        background-color: var(--snow);
+        width: 24px;
+    }
+
+    nav .far {
+        color: var(--snow);
+    }
+
+    .fa-window-close {
+        transform: translateX(-70px);
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    main {
+        margin-left: 10px !important;
+        margin-top: 70px !important;
+    }
+}
+
+main {
+    position: absolute;
+    height: 100vh;
+    margin-left: 280px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.main-section {
+    padding-left: 15px;
+    border: 1px solid var(--red-pigment);
+    margin-bottom: 10px;
+}
+
+.main-section h2 {
+    margin: 10px 0;
+}
+
+.main-section p {
+    padding: 0 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+    
+}
+
+.main-section p::first-letter {
+    color: var(--red-pigment);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.main-section li {
+    list-style: none;
+    padding-left: 55px;
+    margin-bottom: 10px;
+}
+
+.main-section li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--red-pigment); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 10px; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    font-weight: bolder;
+    background-color: var(--dark-sky-blue);
+    padding: 0 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+.inner-list li {
+    list-style: none;
+    margin-left: -20px;
+}
+
+.inner-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--fire-opal); /* Change the color */
+    font-weight: lighter; /* If you want it to be lighter */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 10px; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 20px;
+}
+
+.like-btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(238, 99, 82, 0.6);
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.like-btn:hover {
+    color: rgba(238, 99, 82, 1);
+}
+
+.like-btn:visited {
+    color: rgba(238, 99, 82, 1);
+}
+
+.like-btn span {
+    display: block;
+    position: absolute;
+    background-color: var(--red-pigment);
+}
+
+.like-btn span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.like-btn:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.like-btn span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.like-btn:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.like-btn span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.like-btn:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.like-btn span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.like-btn:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
